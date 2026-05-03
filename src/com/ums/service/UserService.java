@@ -33,4 +33,13 @@ public class UserService {
         users.removeIf(user -> user.getId() == id);
         System.out.println("User deleted if existed");
     }
+
+    public User getUserById(int id) {
+        for (User user : users) {
+            if (user.getId() == id) {
+                return user;
+            }
+        }
+        return null;
+    }
 }

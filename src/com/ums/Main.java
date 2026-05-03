@@ -26,5 +26,15 @@ public class Main {
 
         System.out.println("=== After Delete ===");
         service.displayAllUsers();
+
+        // SEARCH
+        System.out.println("=== Search User ===");
+        User foundUser = service.getUserById(1);
+
+        if (foundUser != null) {
+            foundUser.displayUser();
+        } else {
+            System.out.println("User not found");
+        }
     }
 }
