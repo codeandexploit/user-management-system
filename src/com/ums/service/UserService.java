@@ -17,4 +17,20 @@ public class UserService {
             System.out.println("------------");
         }
     }
+
+    public void updateUser(int id, String newName) {
+        for (User user : users) {
+            if (user.getId() == id) {
+                user.setName(newName);
+                System.out.println("User updated successfully");
+                return;
+            }
+        }
+        System.out.println("User not found");
+    }
+
+    public void deleteUser(int id) {
+        users.removeIf(user -> user.getId() == id);
+        System.out.println("User deleted if existed");
+    }
 }

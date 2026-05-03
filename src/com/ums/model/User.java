@@ -11,6 +11,14 @@ public class User {
         this.email = email;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void displayUser() {
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
