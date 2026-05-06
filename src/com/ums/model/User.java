@@ -15,6 +15,14 @@ public class User {
         return id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
     public void setName(String name) {
         this.name = name;
     }

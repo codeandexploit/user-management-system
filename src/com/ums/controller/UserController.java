@@ -11,6 +11,8 @@ public class UserController {
 
     public void runApp() {
 
+        service.loadUsersFromFile();
+
         while (true) {
             System.out.println("\n=== User Management Menu ===");
             System.out.println("1. Add User");
